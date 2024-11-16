@@ -1,0 +1,27 @@
+{% extends 'chocolate_house/base.html' %}
+
+{% block content %}
+  <h2>Customer Suggestions</h2>
+
+ 
+  <h3>Submit your suggestion</h3>
+  <form method="POST">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">Submit</button>
+  </form>
+
+  <h3>All Suggestions</h3>
+  <ul>
+    {% for suggestion in suggestions %}
+      <li>
+        
+        <strong>Flavor Suggestion:</strong> {{ suggestion.flavor_suggestion|default:"No flavor suggestion provided" }}
+        <br>
+        <strong>Allergy Concern:</strong> {{ suggestion.allergy_concern|default:"No allergy concern provided" }}
+      </li>
+    {% empty %}
+      <li>No suggestions yet!</li>
+    {% endfor %}
+  </ul>
+{% endblock %}

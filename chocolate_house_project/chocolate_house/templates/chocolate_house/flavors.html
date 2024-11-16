@@ -1,0 +1,16 @@
+<!-- templates/chocolate_house/flavors.html -->
+{% extends 'chocolate_house/base.html' %}
+
+{% block content %}
+    <h1>Seasonal Flavors</h1>
+    <ul>
+        {% for flavor in flavors %}
+            <li>{{ flavor.name }}</li>
+        {% endfor %}
+    </ul>
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Add Flavor</button>
+    </form>
+{% endblock %}

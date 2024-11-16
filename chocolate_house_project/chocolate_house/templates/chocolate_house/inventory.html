@@ -1,0 +1,22 @@
+
+{% extends 'chocolate_house/base.html' %}
+
+{% block content %}
+    <h1> Ingredient Inventory</h1>
+   
+    <ul>
+        {% for item in inventory_items %}
+            <li>
+                      {{ item.name }} - {{ item.quantity }} in stock - ₹{{ item.unit_price }}
+            </li>
+        {% endfor %}
+    </ul>
+
+ 
+    <h3>Add New Item</h3>
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Add Item</button>
+    </form>
+{% endblock %}
