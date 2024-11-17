@@ -19,8 +19,10 @@ This Python-based Django application is designed to manage the operations of a f
 python -m venv venv
 
 **3.Activate the virtual environment:**
+
 On Windows:
 venv\Scripts\activate
+
 On macOS/Linux:
 source venv/bin/activate
 
