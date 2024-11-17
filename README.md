@@ -13,7 +13,7 @@ This Python-based Django application is designed to manage the operations of a f
    
    ```bash
    git clone https://github.com/DarshanR1922/chocalate-house.git
-   cd chocalate-house
+   cd project
 
 2.Set up a virtual environment:
 
