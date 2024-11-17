@@ -17,15 +17,15 @@ This Python-based Django application is designed to manage the operations of a f
 2.Set up a virtual environment:
 
 python -m venv venv
-3.Activate the virtual environment:
+**3.Activate the virtual environment:**
 On Windows:
 venv\Scripts\activate
 On macOS/Linux:
 source venv/bin/activate
-4.pip install django
-5.python manage.py makemigratiions
+**4.pip install django**
+**5.python manage.py makemigratiions
 6.python manage.py migrate
-7.python manage.py runserver
+7.python manage.py runserver**
 API Endpoints
 1. Seasonal Flavors
 GET /flavors: Get all available seasonal flavors.
