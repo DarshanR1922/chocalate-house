@@ -12,20 +12,25 @@ This Python-based Django application is designed to manage the operations of a f
 1. Clone the repository:
    
    ```bash
-   git clone <repo_url>
+   git clone <https://github.com/DarshanR1922/chocalate-house.git>
    cd project
 2.Set up a virtual environment:
 
 python -m venv venv
+
 **3.Activate the virtual environment:**
 On Windows:
 venv\Scripts\activate
 On macOS/Linux:
 source venv/bin/activate
+
 **4.pip install django**
-**5.python manage.py makemigratiions
-6.python manage.py migrate
-7.python manage.py runserver**
+
+**5.python manage.py makemigratiions**
+
+**6.python manage.py migrate**
+
+**7.python manage.py runserver****
 API Endpoints
 1. Seasonal Flavors
 GET /flavors: Get all available seasonal flavors.
